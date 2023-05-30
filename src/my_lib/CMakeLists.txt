@@ -16,6 +16,7 @@ target_link_libraries(
             SDL2_image
             SDL2_mixer
             SDL2_ttf
+            SDL2_net
             cxxopts::cxxopts)
 
 if(${ENABLE_WARNINGS})
