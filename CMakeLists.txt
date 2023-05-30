@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.21)
 
 project(
-    "CppTemplate"
-    VERSION 1.0.0
+    "sdl-tutorials"
+    VERSION 0.1.0
     LANGUAGES C CXX)
 
 # Global CMake variables are set here
@@ -12,6 +12,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Options
+option(USE_SDL_MIXER "Use SDL mixer." ON)
+
 option(ENABLE_WARNINGS "Enable to add warnings to a target." ON)
 option(ENABLE_WARNINGS_AS_ERRORS "Enable to treat warnings as errors." OFF)
 
@@ -65,11 +67,69 @@ endif()
 
 # EXTERNAL LIBRARIES
 include(CPM)
-cpmaddpackage("gh:fmtlib/fmt#9.1.0")
-cpmaddpackage("gh:nlohmann/json@3.11.2")
-cpmaddpackage("gh:catchorg/Catch2@2.13.9")
-cpmaddpackage("gh:jarro2783/cxxopts@3.1.1")
-cpmaddpackage("gh:gabime/spdlog@1.11.0")
+CPMAddPackage("gh:fmtlib/fmt#9.1.0")
+CPMAddPackage("gh:nlohmann/json@3.11.2")
+CPMAddPackage("gh:catchorg/Catch2@2.13.9")
+CPMAddPackage("gh:jarro2783/cxxopts@3.1.1")
+#CPMAddPackage("gh:gabime/spdlog@1.11.0")
+
+CPMAddPackage(
+  GITHUB_REPOSITORY gabime/spdlog
+  VERSION 1.11.0
+  OPTIONS
+  "SPDLOG_FMT_EXTERNAL YES"
+  "SPDLOG_INSTALL NO"
+  "SPDLOG_BUILD_EXAMPLE NO"
+  "SPDLOG_BUILD_SHARED NO"
+  "SPDLOG_BUILD_TESTS NO"
+)
+
+CPMAddPackage(
+  GITHUB_REPOSITORY libsdl-org/SDL
+  GIT_TAG release-2.26.3
+  OPTIONS
+  "SDL2_DISABLE_UNINSTALL NO"
+  "SDL_SHARED NO"
+  "SDL_SHARED_ENABLED_BY_DEFAULT NO"
+  "SDL_STATIC YES"
+  "SDL_STATIC_ENABLED_BY_DEFAULT YES"
+  "SDL_TEST NO"
+  "SDL_TEST_ENABLED_BY_DEFAULT NO"
+  "SDL2_IMAGE_INSTALL NO"
+  "SDL2_DISABLE_INSTALL NO"
+)
+
+CPMAddPackage(
+  GITHUB_REPOSITORY libsdl-org/SDL_image
+  GIT_TAG release-2.6.3
+  OPTIONS
+  "BUILD_SHARED_LIBS NO"
+  "SDL2IMAGE_SAMPLES NO"
+)
+
+CPMAddPackage(
+  GITHUB_REPOSITORY libsdl-org/SDL_mixer
+  GIT_TAG release-2.6.3
+  OPTIONS
+  "BUILD_SHARED_LIBS NO"
+  "SDL2MIXER_SAMPLES NO"
+  "SDL2MIXER_DEPS_SHARED NO"
+  "SDL2MIXER_BUILD_SHARED_LIBS NO"
+  #"SDL2MIXER_VENDORED NO"
+  "SDL2MIXER_MOD NO"
+  "SDL2MIXER_FLAC NO"
+  "SDL2MIXER_OPUS NO"
+  "SDL2MIXER_OPUS_SHARED NO"
+  "SDL2MIXER_VORBIS_VORBISFILE_SHARED NO"
+)
+
+CPMAddPackage(
+  GITHUB_REPOSITORY libsdl-org/SDL_ttf
+  GIT_TAG release-2.20.2
+  OPTIONS
+  "BUILD_SHARED_LIBS NO"
+  "SDL2TTF_SAMPLES NO"
+)
 
 # SUB DIRECTORIES
 

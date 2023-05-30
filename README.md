@@ -10,7 +10,7 @@ This is a template for C++ projects. What you get:
 - Library, executable and test code separated in distinct folders
 - Use of modern CMake for building and compiling
 - External libraries installed and managed by
-  - [CPM](https://github.com/cpm-cmake/CPM.cmake) Package Manager OR
+  - [CPM](https://github.com/cpm-cmake/CPM.cmake) Package Manager
 - Unit testing using [Catch2](https://github.com/catchorg/Catch2) v2
 - General purpose libraries: [JSON](https://github.com/nlohmann/json), [spdlog](https://github.com/gabime/spdlog), [cxxopts](https://github.com/jarro2783/cxxopts) and [fmt](https://github.com/fmtlib/fmt)
 - Continuous integration testing with Github Actions and [pre-commit](https://pre-commit.com/)
@@ -99,4 +99,30 @@ cmake -DCMAKE_BUILD_TYPE=Debug -DENABLE_COVERAGE=ON ..
 cmake --build . --config Debug --target coverage
 ```
 
+- Output
+
+```shell
+JSON: 3.11.2
+FMT: 90100
+CXXOPTS: 3.1.1
+SPDLOG: 1.11.0
+SDL: 2.26.3
+SDL_image: 2.6.3
+SDL_mixer: 2.6.3
+SDL_ttf: 2.20.2
+
+
+Usage Example:
+[2023-05-30 13:32:54.175] [info] Welcome to sdl-tutorials v0.1.0
+
+Welcome to sdl-tutorials v0.1.0
+
+Usage:
+  sdl-tutorials [OPTION...]
+
+ arguments options:
+  -h, --help          Print usage
+  -f, --filename arg  File name
+  -v, --verbose       Verbose output
+```
 For more info about CMake see [here](./README_cmake.md).

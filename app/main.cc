@@ -4,6 +4,10 @@
 #include <fstream>
 #include <iostream>
 
+#include <SDL.h>
+#include <SDL_image.h>
+#include <SDL_mixer.h>
+#include <SDL_ttf.h>
 #include <cxxopts.hpp>
 #include <fmt/format.h>
 #include <nlohmann/json.hpp>
@@ -26,6 +30,14 @@ int main(int argc, char **argv)
               << '\n';
     std::cout << "SPDLOG: " << SPDLOG_VER_MAJOR << "." << SPDLOG_VER_MINOR
               << "." << SPDLOG_VER_PATCH << '\n';
+    std::cout << "SDL: " << SDL_MAJOR_VERSION << "." << SDL_MINOR_VERSION << "."
+              << SDL_PATCHLEVEL << '\n';
+    std::cout << "SDL_image: " << SDL_IMAGE_MAJOR_VERSION << "."
+              << SDL_IMAGE_MINOR_VERSION << "." << SDL_IMAGE_PATCHLEVEL << '\n';
+    std::cout << "SDL_mixer: " << SDL_MIXER_MAJOR_VERSION << "."
+              << SDL_MIXER_MINOR_VERSION << "." << SDL_MIXER_PATCHLEVEL << '\n';
+    std::cout << "SDL_ttf: " << SDL_TTF_MAJOR_VERSION << "."
+              << SDL_TTF_MINOR_VERSION << "." << SDL_TTF_PATCHLEVEL << '\n';
     std::cout << "\n\nUsage Example:\n";
 
     // Compiler Warning and clang tidy error
