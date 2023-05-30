@@ -131,6 +131,14 @@ CPMAddPackage(
   "SDL2TTF_SAMPLES NO"
 )
 
+CPMAddPackage(
+  GITHUB_REPOSITORY libsdl-org/SDL_net
+  GIT_TAG release-2.2.0
+  OPTIONS
+  "BUILD_SHARED_LIBS NO"
+  "SDL2NET_SAMPLES NO"
+)
+
 # SUB DIRECTORIES
 
 add_subdirectory(configured)
