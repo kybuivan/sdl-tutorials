@@ -143,6 +143,7 @@ CPMAddPackage(
 add_subdirectory(configured)
 add_subdirectory(src)
 add_subdirectory(app)
+add_subdirectory(tutorials)
 add_subdirectory(tests)
 
 # INSTALL TARGETS
