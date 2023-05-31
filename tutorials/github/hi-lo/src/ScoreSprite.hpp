@@ -4,11 +4,13 @@
 #include "Score.hpp"
 #include "Sprite.hpp"
 
-namespace HiLo {
+namespace HiLo
+{
 
-class ScoreSprite : public Sprite {
+class ScoreSprite : public Sprite
+{
 public:
-    ScoreSprite(Color textColor, Rectangle const& destinationBounds) noexcept;
+    ScoreSprite(Color textColor, Rectangle const &destinationBounds) noexcept;
 
     auto setScore(Score) noexcept -> void;
 

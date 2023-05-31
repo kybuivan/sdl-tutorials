@@ -3,17 +3,17 @@
 #include "Rectangle.hpp"
 #include "Size.hpp"
 
-namespace HiLo {
+namespace HiLo
+{
 
-auto scale(Size&, double factor) noexcept -> void;
+auto scale(Size &, double factor) noexcept -> void;
 
-auto scaleToFit(Size& source, Size const& destination) noexcept -> void;
+auto scaleToFit(Size &source, Size const &destination) noexcept -> void;
 
-auto fittingRectangle(Size, Rectangle const& destination) noexcept
-    -> Rectangle;
+auto fittingRectangle(Size, Rectangle const &destination) noexcept -> Rectangle;
 
-auto scaleInPlace(Rectangle&, double scaleFactor) noexcept -> void;
+auto scaleInPlace(Rectangle &, double scaleFactor) noexcept -> void;
 
-auto isPointInRectangle(Point const&, Rectangle const&) noexcept -> bool;
+auto isPointInRectangle(Point const &, Rectangle const &) noexcept -> bool;
 
 } // namespace HiLo

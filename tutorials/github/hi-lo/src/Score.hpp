@@ -1,8 +1,10 @@
 #pragma once
 
-namespace HiLo {
+namespace HiLo
+{
 
-class Score {
+class Score
+{
 public:
     constexpr Score() noexcept;
 
@@ -28,8 +30,7 @@ constexpr auto operator<=(Score lhs, Score rhs) noexcept -> bool;
 
 constexpr auto operator>=(Score lhs, Score rhs) noexcept -> bool;
 
-constexpr Score::Score() noexcept
-    : mCount{0}
+constexpr Score::Score() noexcept : mCount{0}
 {
 }
 

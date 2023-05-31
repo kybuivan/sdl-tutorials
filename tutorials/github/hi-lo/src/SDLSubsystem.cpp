@@ -4,7 +4,8 @@
 
 #include "Assert.hpp"
 
-namespace HiLo {
+namespace HiLo
+{
 
 auto SDLSubsystem::initialize() noexcept -> void
 {
@@ -13,7 +14,8 @@ auto SDLSubsystem::initialize() noexcept -> void
 
 SDLSubsystem::SDLSubsystem() noexcept
 {
-    if (SDL_Init(SDL_INIT_VIDEO) < 0) {
+    if (SDL_Init(SDL_INIT_VIDEO) < 0)
+    {
         SDL_assert(false);
     }
 }

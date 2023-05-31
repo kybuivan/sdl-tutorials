@@ -175,9 +175,9 @@
     "doxdocgen.generic.returnTemplate": "@return",
     "doxdocgen.generic.includeTypeAtReturn": false,
     "markdown.validate.enabled": true,
-    "[markdown]": {
+    "[md]": {
         "files.trimTrailingWhitespace": false,
-        "editor.formatOnSave": false,
+        "editor.formatOnSave": true,
         "editor.defaultFormatter": "yzhang.markdown-all-in-one",
         "editor.wordWrap": "wordWrapColumn"
     },

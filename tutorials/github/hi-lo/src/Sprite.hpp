@@ -5,11 +5,13 @@
 #include "Rectangle.hpp"
 #include "Texture.hpp"
 
-namespace HiLo {
+namespace HiLo
+{
 
-class Sprite {
+class Sprite
+{
 public:
-    Sprite(Texture, Rectangle const& destinationBounds = Rectangle{}) noexcept;
+    Sprite(Texture, Rectangle const &destinationBounds = Rectangle{}) noexcept;
 
     auto draw() const noexcept -> void;
 

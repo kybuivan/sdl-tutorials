@@ -4,7 +4,8 @@
 
 #include "Assert.hpp"
 
-namespace HiLo {
+namespace HiLo
+{
 
 auto TTFSubsystem::initialize() noexcept -> void
 {
@@ -13,7 +14,8 @@ auto TTFSubsystem::initialize() noexcept -> void
 
 TTFSubsystem::TTFSubsystem() noexcept
 {
-    if (TTF_Init() < 0) {
+    if (TTF_Init() < 0)
+    {
         SDL_assert(false);
     }
 }
