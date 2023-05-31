@@ -5,6 +5,7 @@ set(projects
     maze
     chess
     pong
+    sokoban
 )
 
 foreach(projname ${projects})
