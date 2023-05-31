@@ -1,6 +1,7 @@
 set(projects
     wenova
     snake
+    hi-lo
 )
 
 foreach(projname ${projects})
