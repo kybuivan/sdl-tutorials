@@ -3,7 +3,10 @@
 
 using std::to_string;
 
-#define WHITE { 255, 255, 255, 255 }
+#define WHITE                                                                  \
+    {                                                                          \
+        255, 255, 255, 255                                                     \
+    }
 
 BattleEnd::BattleEnd(int id_winner)
 {

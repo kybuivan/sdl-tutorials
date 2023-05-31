@@ -1,9 +1,10 @@
 #ifndef STATEDATA_H
 #define STATEDATA_H
 
-class StateData{
+class StateData
+{
 public:
-	bool player_victory;
+    bool player_victory;
 };
 
 #endif
