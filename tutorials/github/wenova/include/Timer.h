@@ -1,16 +1,17 @@
 #ifndef TIMER_H
 #define TIMER_H
 
-class Timer{
+class Timer
+{
 private:
-	float time;
+    float time;
 
 public:
-	Timer();
-	void update(float delta);
-	void restart();
-	float get();
-	void set(float ctime);
+    Timer();
+    void update(float delta);
+    void restart();
+    float get();
+    void set(float ctime);
 };
 
 #endif

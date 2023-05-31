@@ -5,35 +5,36 @@
 
 #include "GameObject.h"
 #include "Sprite.h"
-#include "Timer.h"
 #include "Text.h"
+#include "Timer.h"
 
 using std::string;
 
-class TimeCounter : public GameObject{
-	public:
-		TimeCounter();
-		~TimeCounter();
+class TimeCounter : public GameObject
+{
+public:
+    TimeCounter();
+    ~TimeCounter();
 
-		void update(float delta);
+    void update(float delta);
 
-		void render();
+    void render();
 
-		bool is_dead();
+    bool is_dead();
 
-		bool is_over();
+    bool is_over();
 
-		void notify_collision(GameObject &object);
+    void notify_collision(GameObject &object);
 
-		static const int total_time = 100;
+    static const int total_time = 100;
 
-	private:
-		Sprite bg;
-		Timer timer;
-		Text *text;
-		float remaining_seconds;
+private:
+    Sprite bg;
+    Timer timer;
+    Text *text;
+    float remaining_seconds;
 
-		string get_time_string();
+    string get_time_string();
 };
 
 #endif

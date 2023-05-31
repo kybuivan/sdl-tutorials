@@ -1,40 +1,41 @@
 #ifndef EDITSTATE_H
 #define EDITSTATE_H
 
-#include "State.h"
-#include "Sprite.h"
-#include "Text.h"
-#include "Timer.h"
+#include "Fighter.h"
 #include "Music.h"
 #include "Sound.h"
-#include "Fighter.h"
+#include "Sprite.h"
+#include "State.h"
+#include "Text.h"
+#include "Timer.h"
 #include "Vector.h"
 
-#include <vector>
 #include <utility>
+#include <vector>
 
-using std::vector;
 using std::pair;
+using std::vector;
 
-class EditState : public State{
+class EditState : public State
+{
 private:
-	vector<pair<Sprite, Vector> > backgrounds;
-	Fighter * test_fighter;
-	string stage;
-	Music music;
-	Sound sound;
+    vector<pair<Sprite, Vector>> backgrounds;
+    Fighter *test_fighter;
+    string stage;
+    Music music;
+    Sound sound;
 
-	void read_level_design();
-	void update_level_design();
+    void read_level_design();
+    void update_level_design();
 
 public:
-	EditState(string stage);
+    EditState(string stage);
 
-	void update(float delta);
-	void render();
+    void update(float delta);
+    void render();
 
-	void pause();
-	void resume();
+    void pause();
+    void resume();
 };
 
 #endif

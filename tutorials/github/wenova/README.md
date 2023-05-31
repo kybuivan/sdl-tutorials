@@ -3,19 +3,19 @@
 ![Logo](res/readme/logo.png)
 
 ## Sumário
-* [1. Descrição do Jogo](#1-descrição-do-jogo)  
+* [1. Descrição do Jogo](#1-descrição-do-jogo)
 * [2. Informações Gerais](#2-informações-gerais)
 * [2.1. História](#21-história)
 * [2.2. Screenshots](#22-screenshots)
-* [2.3. Gameplay](#23-gameplay)   
+* [2.3. Gameplay](#23-gameplay)
 * [3. Jogabilidade](#3-jogabilidade)
 * [3.1. Objetivos](#31-objetivos)
-* [3.2. Controles](#32-controles)     
+* [3.2. Controles](#32-controles)
 * [4. Outras Informações](#4-outras-informações)
-* [4.1. Dependências](#41-dependências)   
+* [4.1. Dependências](#41-dependências)
 * [4.2. Instalação e Compilação](#42-instalação-e-compilação)
 * [4.3. Licença](#43-licença)
-* [5. Time](#5-time)   
+* [5. Time](#5-time)
 
 ------------------------------------------------------------
 

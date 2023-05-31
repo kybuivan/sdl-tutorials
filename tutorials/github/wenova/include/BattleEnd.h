@@ -3,8 +3,8 @@
 
 #define N_SPRITES 8
 
-#include "State.h"
 #include "Sprite.h"
+#include "State.h"
 #include "Text.h"
 
 #include <string>
@@ -13,28 +13,29 @@
 using std::string;
 using std::vector;
 
-class BattleEnd : public GameObject{
-	public:
-		BattleEnd(int id_winner);
+class BattleEnd : public GameObject
+{
+public:
+    BattleEnd(int id_winner);
 
-		void update(float delta);
-		void render();
+    void update(float delta);
+    void render();
 
-		bool is_dead();
+    bool is_dead();
 
-		bool quit_requested();
+    bool quit_requested();
 
-		void notify_collision(GameObject & object);
+    void notify_collision(GameObject &object);
 
-	private:
-		vector <Sprite> sprite;
+private:
+    vector<Sprite> sprite;
 
-		int current_sprite;
+    int current_sprite;
 
-		bool back_selected, quitRequested;
+    bool back_selected, quitRequested;
 
-		Sprite back_btn;
-		Text *back_txt;
+    Sprite back_btn;
+    Text *back_txt;
 };
 
 #endif

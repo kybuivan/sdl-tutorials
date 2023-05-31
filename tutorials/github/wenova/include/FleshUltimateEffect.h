@@ -3,13 +3,17 @@
 
 #include "Effect.h"
 
-class FleshUltimateEffect : public Effect{
-	public:
-		FleshUltimateEffect(Fighter * cparent, string csprite, string ctags, int frames = 1);
+class FleshUltimateEffect : public Effect
+{
+public:
+    FleshUltimateEffect(Fighter *cparent,
+                        string csprite,
+                        string ctags,
+                        int frames = 1);
 
-		void update(float delta);
-		void render();
-		bool is_dead();
+    void update(float delta);
+    void render();
+    bool is_dead();
 };
 
 #endif
