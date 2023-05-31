@@ -9,7 +9,7 @@ https://youtu.be/t80xjY6SwNA
 * Legal chess moves
 * King checks
 * End game(Checkmate or Draw)
-* Special Moves 
+* Special Moves
     - Castle
     - En Passant
     - Promotion(Queen only)
@@ -25,4 +25,3 @@ https://youtu.be/t80xjY6SwNA
 
 ## Support
 Feel free to contribute if you want... :wink:
-

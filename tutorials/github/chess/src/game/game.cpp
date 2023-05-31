@@ -373,7 +373,6 @@ void Game::cleanAllIsDefendedPieceAtribute()
     }
 }
 
-
 //
 // Pawn
 //
@@ -388,7 +387,6 @@ bool Game::isPawnPromotion(Position *from, Position *to)
              (piece->team == enums::Team::BLACK && to->row == 7)));
 }
 
-
 Piece *Game::promoteToQueen(Piece *pawn)
 {
     Queen *nQ = new Queen(
@@ -401,10 +399,8 @@ Piece *Game::promoteToQueen(Piece *pawn)
 
 bool Game::isEnPassant(Position *from, Position *to)
 {
-
     Piece *piece = getPieceFromBoardPosition(from);
     Piece *pieceTo = getPieceFromBoardPosition(to);
-
 
     //Checks if theres a piece in the position to move
     if (pieceTo)
@@ -434,13 +430,12 @@ bool Game::isEnPassant(Position *from, Position *to)
     //  4 - Enemy pawn must have made only one move
     //  5 - Enemy pawn must be the last piece moved
 
-    if (piece && piece->pieceType == enums::Piece::PAWN     //1
-        && enemyPiece && enemyPiece->pieceType == enums::Piece::PAWN &&
-        enemyPiece->team != piece->team                     //2
-        && enemyPiece->getPosition()->row == en_passant_row //3
-        && enemyPiece->getMoveCount() == 1                  //4
-        && enemyPiece->getIsLastPieceMoved()                //5
-    )
+    if ((piece && piece->pieceType == enums::Piece::PAWN) /*1*/ &&
+        (enemyPiece && enemyPiece->pieceType == enums::Piece::PAWN &&
+         enemyPiece->team != piece->team) /*2*/
+        && (enemyPiece->getPosition()->row == en_passant_row) /*3*/ &&
+        (enemyPiece->getMoveCount() == 1) /*4*/ &&
+        (enemyPiece->getIsLastPieceMoved())) /*5*/
     {
         delete enemyPos;
         return true;

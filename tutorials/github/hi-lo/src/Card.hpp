@@ -1,15 +1,34 @@
 #pragma once
 
-namespace HiLo {
+namespace HiLo
+{
 
-class Card {
+class Card
+{
 public:
-    enum class Rank {
-        _2, _3, _4, _5, _6, _7, _8, _9, T, J, Q, K, A
+    enum class Rank
+    {
+        _2,
+        _3,
+        _4,
+        _5,
+        _6,
+        _7,
+        _8,
+        _9,
+        T,
+        J,
+        Q,
+        K,
+        A
     };
 
-    enum class Suit {
-        clubs, diamonds, hearts, spades
+    enum class Suit
+    {
+        clubs,
+        diamonds,
+        hearts,
+        spades
     };
 
     Card() noexcept = default;
@@ -25,13 +44,12 @@ private:
     Suit mSuit;
 };
 
-constexpr auto operator==(Card const& lhs, Card const& rhs) noexcept -> bool;
+constexpr auto operator==(Card const &lhs, Card const &rhs) noexcept -> bool;
 
-constexpr auto operator!=(Card const& lhs, Card const& rhs) noexcept -> bool;
+constexpr auto operator!=(Card const &lhs, Card const &rhs) noexcept -> bool;
 
 constexpr Card::Card(Card::Rank const rank, Card::Suit const suit) noexcept
-    : mRank{rank}
-    , mSuit{suit}
+    : mRank{rank}, mSuit{suit}
 {
 }
 
@@ -45,12 +63,12 @@ constexpr auto Card::suit() const noexcept -> Card::Suit
     return mSuit;
 }
 
-constexpr auto operator==(Card const& lhs, Card const& rhs) noexcept -> bool
+constexpr auto operator==(Card const &lhs, Card const &rhs) noexcept -> bool
 {
     return lhs.rank() == rhs.rank() && lhs.suit() == rhs.suit();
 }
 
-constexpr auto operator!=(Card const& lhs, Card const& rhs) noexcept -> bool
+constexpr auto operator!=(Card const &lhs, Card const &rhs) noexcept -> bool
 {
     return !(lhs == rhs);
 }

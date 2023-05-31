@@ -55,7 +55,7 @@ push all crates to designated places in the least amount of moves.
 
 
 ### Built With
-This project was built with 
+This project was built with
 * [cmake](https://cmake.org/)
 * [SDL](https://www.libsdl.org/)
 

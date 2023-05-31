@@ -5,8 +5,9 @@
 #include "Color.hpp"
 #include "Texture.hpp"
 
-namespace HiLo {
+namespace HiLo
+{
 
-auto getTextTexture(std::string const& text, Color color) noexcept -> Texture;
+auto getTextTexture(std::string const &text, Color color) noexcept -> Texture;
 
 } // namespace HiLo

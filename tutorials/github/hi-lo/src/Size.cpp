@@ -2,11 +2,11 @@
 
 #include "Assert.hpp"
 
-namespace HiLo {
+namespace HiLo
+{
 
 Size::Size(int const width, int const height) noexcept
-    : mWidth{width}
-    , mHeight{height}
+    : mWidth{width}, mHeight{height}
 {
     SDL_assert(0 <= width);
     SDL_assert(0 <= height);
