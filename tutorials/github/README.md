@@ -8,3 +8,4 @@
 - [sdl2-pong](https://github.com/toivjon/sdl2-pong) - A SDL2 implementation of the classic Pong game.
 - [sokoban](https://github.com/Percival33/sokoban) - College assignment to create Sokoban game using SDL
 - [mine-sweeper](https://github.com/tjumyk/mine-sweeper) - C implementation of the classic 'Mine Sweeper' game
+- [GameOfLifeSDL](https://github.com/justinasr/GameOfLifeSDL) - Conway's Game of Life with SDL2
