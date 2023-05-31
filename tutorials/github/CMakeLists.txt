@@ -6,6 +6,7 @@ set(projects
     chess
     pong
     sokoban
+    mine-sweeper
 )
 
 foreach(projname ${projects})
