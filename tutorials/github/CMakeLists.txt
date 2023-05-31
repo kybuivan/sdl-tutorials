@@ -4,6 +4,7 @@ set(projects
     hi-lo
     maze
     chess
+    pong
 )
 
 foreach(projname ${projects})

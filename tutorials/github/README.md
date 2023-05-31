@@ -5,3 +5,4 @@
 - [Hi-Lo](https://github.com/JankoDedic/Hi-Lo) - Hi-Lo written in C++ using SDL2
 - [Maze](https://github.com/ukdv12/A-Maze-Game) - Repository for A Maze Game, a C++ project using SDL (submitting for UCF Portfolio)
 - [chess-sdl2](https://github.com/leo-motta/chess-sdl2) - c++ chess game
+- [sdl2-pong](https://github.com/toivjon/sdl2-pong) - A SDL2 implementation of the classic Pong game.
