@@ -3,6 +3,7 @@ set(projects
     snake
     hi-lo
     maze
+    chess
 )
 
 foreach(projname ${projects})
