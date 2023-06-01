@@ -3,7 +3,7 @@
 #include "Assert.hpp"
 #include "Display.hpp"
 #include "RectangleFunctions.hpp"
-#include "Size.hpp"
+#include <size.hpp>
 
 namespace HiLo
 {

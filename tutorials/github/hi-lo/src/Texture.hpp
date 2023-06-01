@@ -4,7 +4,7 @@
 
 #include <SDL.h>
 
-#include "Size.hpp"
+#include <size.hpp>
 
 namespace HiLo
 {
