@@ -7,7 +7,7 @@
 
 #include "Color.hpp"
 #include "Rectangle.hpp"
-#include "Size.hpp"
+#include <size.hpp>
 #include "Texture.hpp"
 
 namespace HiLo

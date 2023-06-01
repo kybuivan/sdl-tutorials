@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Size.hpp"
+#include <size.hpp>
 
 namespace HiLo
 {
